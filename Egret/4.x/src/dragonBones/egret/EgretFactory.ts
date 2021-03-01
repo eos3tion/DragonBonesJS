@@ -85,7 +85,7 @@ namespace dragonBones {
         }
 
         protected _isSupportMesh(): boolean {
-            if (egret.Capabilities.renderMode === "webgl" || egret.Capabilities.runtimeType === egret.RuntimeType.NATIVE) {
+            if (egret.Capabilities.renderMode === "webgl") {
                 return true;
             }
 

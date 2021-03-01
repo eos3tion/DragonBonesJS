@@ -63,5 +63,9 @@ namespace dragonBones {
             this.alphaMultiplier = this.redMultiplier = this.greenMultiplier = this.blueMultiplier = 1.0;
             this.alphaOffset = this.redOffset = this.greenOffset = this.blueOffset = 0;
         }
+
+        get tint() {
+            return (this.redMultiplier * 0xff) << 16 | (this.greenMultiplier * 0xff) << 8 | (this.blueMultiplier * 0xff);
+        }
     }
 }
